@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Music Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+             Music Dashboard
+        </div>
+
+        <button id="darkmodeBtn">
+             Dark Mode
+        </button>
+
+    </header>
+
+
+    <main>
+
+        <section class="hero">
+
+            <h1>
+                Mijn Muziekdashboard
+            </h1>
+
+            <p>
+                Ontdek, zoek en bewaar je favoriete nummers.
+            </p>
+
+        </section>
+
+
+        <section class="stats">
+
+            <div class="stat-card">
+
+                <span>nummer</span>
+
+                <h2 id="songCount">
+                    0
+                </h2>
+
+                <p>Nummers</p>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <span>favoriet</span>
+
+                <h2 id="favoriteCount">
+                    0
+                </h2>
+
+                <p>Favorieten</p>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <span>geluid</span>
+
+                <h2 id="genreCount">
+                    0
+                </h2>
+
+                <p>Genres</p>
+
+            </div>
+
+        </section>
+
+
+        <section class="controls">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="🔎 Zoek een nummer of artiest..."
+            >
+
+
+            <select id="genreFilter">
+
+                <option value="all">
+                    Alle genres
+                </option>
+
+                <option value="pop">
+                    Pop
+                </option>
+
+                <option value="rap">
+                    Rap
+                </option>
+
+                <option value="rock">
+                    Rock
+                </option>
+
+                <option value="dance">
+                    Dance
+                </option>
+
+            </select>
+
+
+            <button id="randomBtn">
+                 Random nummer
+            </button>
+
+        </section>
+
+
+        <section>
+
+            <h2 class="section-title">
+                Mijn nummers
+            </h2>
+
+
+            <div id="songList" class="song-list">
+
+                
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+             Music Dashboard
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mini Game Hub</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1> Mini Game Hub</h1>
+        <p>Speel kleine games en probeer je highscore te verbeteren!</p>
+
+        <button id="darkModeButton"> Dark mode</button>
+    </header>
+
+    <main class="container">
+
+        
+        <section class="game-card">
+            <h2> Klik Game</h2>
+
+            <p>
+                Klik zo vaak mogelijk op de knop voordat de tijd voorbij is!
+            </p>
+
+            <div class="game-info">
+                <span>Score: <strong id="clickScore">0</strong></span>
+                <span>Tijd: <strong id="clickTime">10</strong></span>
+            </div>
+
+            <button id="startClickGame" class="main-button">
+                Start Game
+            </button>
+
+            <button id="clickButton" class="click-button" disabled>
+                KLIK MIJ!
+            </button>
+
+            <p id="clickMessage"></p>
+        </section>
+
+
+        
+        <section class="game-card">
+            <h2> Kleur Game</h2>
+
+            <p>
+                Klik op de kleur die bovenaan wordt aangegeven.
+            </p>
+
+            <h3 id="colorQuestion">Klik op Start</h3>
+
+            <div class="color-buttons">
+                <button class="color-button" data-color="rood"></button>
+                <button class="color-button" data-color="blauw"></button>
+                <button class="color-button" data-color="groen"></button>
+                <button class="color-button" data-color="geel"></button>
+            </div>
+
+            <p>Score: <strong id="colorScore">0</strong></p>
+
+            <button id="startColorGame" class="main-button">
+                Start Game
+            </button>
+
+            <p id="colorMessage"></p>
+        </section>
+
+
+       
+        <section class="game-card quiz-card">
+            <h2> Mini Quiz</h2>
+
+            <p id="quizQuestion">
+                Klik op start om de quiz te beginnen.
+            </p>
+
+            <div id="quizAnswers"></div>
+
+            <p>
+                Score: <strong id="quizScore">0</strong>
+            </p>
+
+            <button id="startQuiz" class="main-button">
+                Start Quiz
+            </button>
+
+            <p id="quizMessage"></p>
+        </section>
+
+
+        
+        <section class="highscore-card">
+            <h2> Highscores</h2>
+
+            <div class="highscores">
+                <p>
+                     Klik Game:
+                    <strong id="clickHighscore">0</strong>
+                </p>
+
+                <p>
+                     Kleur Game:
+                    <strong id="colorHighscore">0</strong>
+                </p>
+
+                <p>
+                     Quiz:
+                    <strong id="quizHighscore">0</strong>
+                </p>
+            </div>
+
+            <button id="resetScores" class="reset-button">
+                Reset Highscores
+            </button>
+        </section>
+
+    </main>
+
+    <footer>
+        <p> Mini Game Hub | Gemaakt met HTML, CSS & JavaScript</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

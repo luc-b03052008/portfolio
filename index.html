@@ -1,66 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mijn site </title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lucas Bruggeman  Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
+ 
+
+
     <header>
-        <h1>Welcome to My portfolio</h1>
-        <p>lucas bruggeman</p>
-        <img class="foto2" src="./foto/foto1.jpeg" alt="">
-        <button id="actionBtn">Klik mij</button>
+        <h1 class="pheader"><strong>Lucas Bruggeman</strong></h1>
+          <div class="header-buttons">
+   
+</div>
+        <img src="./foto/WhatsApp Image 2026-09-15 at 11.11.29.jpeg" alt="">
+        <h1>Welcome to my portfolio</h1>
+        <h2 class="pheader"><strong>front-end developer</strong></h2>
     </header>
 
+    
+
     <nav>
-        <a href="#over">Over</a>
-        <a href="#diensten">Diensten</a>
-        <a href="#contact">Contact</a>
+        <a href="#projecten" target="_blank">Projecten</a>
+        <a href="aboutmeskill.html" target="_blank">Skills</a>
+        <a href="aboutmeskill.html" target="_blank">About me</a>
+        <a href="#contact" target="_blank">Contact</a>
     </nav>
 
-    <section id="over"></section>
-    <h2>Over ons</h2>
-    <p>
-     Wij zijn toegewijd aan het leveren van de beste service.
-    </p>
+    <section id="projecten" class="cards">
+        <h2 class="tekst"><strong>Projecten</strong></h2>
+
+        <div class="card">
+            <h3 >Project 1  Room Us</h3>
+            <p>
+                Bij deze opdracht heb ik de verouderde website van de klant verbeterd
+                en opnieuw ontworpen met moderne  <strong>HTML</strong> <strong>CSS</strong> 
+            </p>
+            <a class="button1" href="./roomus/roomus.html" target="_blank">RoomUs website</a>
+        </div>
+
+        <div class="card">
+            <h3>Project 2 mini games</h3>
+            <p>Bij deze opdracht heb ik zelf gewerk aan een project waar ik mini games heb gemaakt met <strong>HTML</strong> <strong>CSS</strong> <strong>JAVASCRIPT</strong>  </p>
+            <a class="button1" href="./project 1/index.html" target="_blank"> Mini game project</a>
+        </div>
+
+        <div class="card">
+            <h3>Project 3 music dashboard </h3>
+            <p>Bij dit project heb ik zelf gewerkt aan een project waar ik een music dashboard heb gemakkt in <strong>HTML</strong> <strong>CSS</strong> <strong>  JAVASCRIPT</strong></p>
+            <a class="button1" href="./Music Dashboard/index.html" target="_blank">Bekijk project</a>
+        </div>
+
+       
     </section>
 
-    <section id="diensten" class="cards">
-        <div class="card">
-            <h3>Projecten</h3>
-        </div>
-        <div class="card">
-            <h3>project 1</h3>
-            <p/p>
-        </div>
-        <div class="card">
-            <h3>project 2</h3>
-            <p>Betrokken gebruikerservaringen die indruk maken.</p>
-        </div>
-    </section>
+    
+     
 
-    <section id="contact">
-        <h2>Contacteer mij </h2>
+
+    <section class="contact" id="contact">
+        <h2>Contact me</h2>
         <form>
             <label for="name">Naam:</label>
-            <input type="text" id="name" name="name" required>
+            <input type="text" id="name" name="name" required />
 
             <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="email" required />
 
             <label for="message">Bericht:</label>
             <textarea id="message" name="message" required></textarea>
 
-            <button type="submit">Verzenden</button>
+            <button type="submit" class="button1">Verzenden</button>
         </form>
     </section>
 
     <footer>
-        <p>@ 2026 Mijn site. Alle rechten voorbehouden.</p>
+        <a href="https://github.com/luc-b03052008/portfolio">GitHub</a>
+        <a href="https://www.linkedin.com/in/lucas-bruggeman-b39a6b413">LinkedIn</a>
+        <a href="mailto:38404@ma-web.nl">E-mail</a>
+        <p>© 2026 Lucas Bruggeman. Alle rechten voorbehouden.</p>
     </footer>
 
-    <script src="script.js"></script>
+   
 </body>
 </html>
+
+
+
+
+

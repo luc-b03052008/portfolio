@@ -1,0 +1,314 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f5ff;
+    color: #222;
+    min-height: 100vh;
+    transition: 0.3s;
+}
+
+
+
+.header {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #6c5ce7, #0984e3);
+    color: white;
+}
+
+.header h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#darkModeButton {
+    border: none;
+    padding: 12px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    background: white;
+    color: #333;
+    font-weight: bold;
+}
+
+#darkModeButton:hover {
+    transform: scale(1.05);
+}
+
+
+
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+
+
+
+.game-card,
+.highscore-card {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.game-card h2,
+.highscore-card h2 {
+    margin-bottom: 15px;
+}
+
+.game-card p {
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+
+
+
+.main-button {
+    background: #6c5ce7;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.main-button:hover {
+    background: #5849c7;
+    transform: translateY(-2px);
+}
+
+
+
+
+.game-info {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+.click-button {
+    display: block;
+    width: 200px;
+    height: 100px;
+    margin: 20px auto;
+
+    border: none;
+    border-radius: 20px;
+
+    background: #ff4757;
+    color: white;
+
+    font-size: 25px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.click-button:hover:not(:disabled) {
+    background: #e8414f;
+    transform: scale(1.05);
+}
+
+.click-button:disabled {
+    background: #aaa;
+    cursor: not-allowed;
+}
+
+
+
+
+.color-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+    justify-content: center;
+    gap: 15px;
+    margin: 25px 0;
+}
+
+.color-button {
+    width: 100px;
+    height: 70px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.color-button:hover {
+    transform: scale(1.08);
+}
+
+.color-button[data-color="rood"] {
+    background: #ff4757;
+}
+
+.color-button[data-color="blauw"] {
+    background: #0984e3;
+}
+
+.color-button[data-color="groen"] {
+    background: #00b894;
+}
+
+.color-button[data-color="geel"] {
+    background: #fdcb6e;
+}
+
+
+
+
+.quiz-card {
+    min-height: 300px;
+}
+
+#quizQuestion {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 25px 0;
+}
+
+#quizAnswers {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto 20px;
+}
+
+.answer-button {
+    border: 2px solid #6c5ce7;
+    background: white;
+    padding: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.answer-button:hover {
+    background: #6c5ce7;
+    color: white;
+}
+
+
+
+
+.highscore-card {
+    grid-column: 1 / -1;
+}
+
+.highscores {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 25px 0;
+    flex-wrap: wrap;
+}
+
+.highscores p {
+    background: #f2f5ff;
+    padding: 15px 25px;
+    border-radius: 12px;
+}
+
+.reset-button {
+    background: #d63031;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.reset-button:hover {
+    background: #b52525;
+}
+
+
+
+
+footer {
+    text-align: center;
+    padding: 30px;
+    color: #666;
+}
+
+
+
+
+body.dark {
+    background: #181824;
+    color: white;
+}
+
+body.dark .game-card,
+body.dark .highscore-card {
+    background: #252538;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+body.dark .answer-button {
+    background: #252538;
+    color: white;
+}
+
+body.dark .answer-button:hover {
+    background: #6c5ce7;
+}
+
+body.dark .highscores p {
+    background: #181824;
+}
+
+body.dark footer {
+    color: #aaa;
+}
+
+
+
+
+@media (max-width: 750px) {
+
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .header h1 {
+        font-size: 32px;
+    }
+
+    .highscore-card {
+        grid-column: auto;
+    }
+
+    .highscores {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+

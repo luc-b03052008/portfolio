@@ -1,0 +1,346 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #222;
+    transition: 0.3s;
+}
+
+
+
+
+header {
+    background-color: #ffffff;
+    padding: 20px 8%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+
+
+#darkmodeBtn {
+    border: none;
+    background-color: #222;
+    color: white;
+
+    padding: 10px 16px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-size: 14px;
+}
+
+#darkmodeBtn:hover {
+    background-color: #444;
+}
+
+
+
+
+main {
+    width: 90%;
+    max-width: 1100px;
+
+    margin: 40px auto;
+}
+
+
+
+
+.hero {
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+
+    color: white;
+
+    padding: 50px;
+
+    border-radius: 20px;
+
+    margin-bottom: 30px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+
+
+
+.stats {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+
+    margin-bottom: 30px;
+}
+
+.stat-card {
+    background-color: white;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.stat-card span {
+    font-size: 30px;
+}
+
+.stat-card h2 {
+    font-size: 30px;
+
+    margin: 10px 0 5px;
+}
+
+.stat-card p {
+    color: #777;
+}
+
+
+
+
+.controls {
+    display: flex;
+
+    gap: 15px;
+
+    margin-bottom: 30px;
+}
+
+.controls input,
+.controls select {
+    padding: 13px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+
+    background-color: white;
+}
+
+.controls input {
+    flex: 1;
+}
+
+.controls button {
+    border: none;
+
+    background-color: #6366f1;
+
+    color: white;
+
+    padding: 13px 18px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+}
+
+.controls button:hover {
+    background-color: #4f46e5;
+}
+
+
+
+
+.section-title {
+    margin-bottom: 15px;
+}
+
+
+
+
+.song-list {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 15px;
+}
+
+.song {
+    background-color: white;
+
+    padding: 20px;
+
+    border-radius: 15px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+
+    transition: 0.2s;
+}
+
+.song:hover {
+    transform: translateY(-3px);
+}
+
+.song-icon {
+    width: 55px;
+    height: 55px;
+
+    background-color: #ede9fe;
+
+    border-radius: 12px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    font-size: 25px;
+}
+
+.song-info {
+    flex: 1;
+}
+
+.song-info h3 {
+    margin-bottom: 5px;
+}
+
+.song-info p {
+    color: #777;
+}
+
+.song-genre {
+    font-size: 12px;
+
+    color: #6366f1;
+
+    margin-top: 5px;
+}
+
+
+
+
+.favorite-btn {
+    border: none;
+
+    background: none;
+
+    font-size: 24px;
+
+    cursor: pointer;
+}
+
+
+
+
+footer {
+    text-align: center;
+
+    padding: 30px;
+
+    color: #777;
+}
+
+
+
+
+body.dark {
+    background-color: #18181b;
+
+    color: white;
+}
+
+body.dark header {
+    background-color: #27272a;
+
+    border-color: #3f3f46;
+}
+
+body.dark .stat-card,
+body.dark .song {
+    background-color: #27272a;
+}
+
+body.dark .controls input,
+body.dark .controls select {
+    background-color: #27272a;
+
+    color: white;
+
+    border-color: #3f3f46;
+}
+
+body.dark .stat-card p,
+body.dark .song-info p,
+body.dark footer {
+    color: #aaa;
+}
+
+
+
+@media (max-width: 700px) {
+
+    header {
+        padding: 15px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    main {
+        width: 95%;
+    }
+
+    .hero {
+        padding: 30px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .stats {
+        grid-template-columns: 1fr;
+    }
+
+    .controls {
+        flex-direction: column;
+    }
+
+    .song-list {
+        grid-template-columns: 1fr;
+    }
+
+}
